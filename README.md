@@ -1,3 +1,7 @@
+<!-- default badges list -->
+![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/520379067/22.1.4%2B)
+[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
+<!-- default badges end -->
 # Grid for Blazor - Delete selected rows
 
 This example demonstrates how to delete selected rows from the [DxGrid](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxGrid) when a user clicks a [DxButton](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxButton).
