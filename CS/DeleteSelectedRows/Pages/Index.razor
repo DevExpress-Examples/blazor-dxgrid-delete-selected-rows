@@ -1,0 +1,38 @@
+﻿@page "/"
+
+@using DeleteSelectedRows.Data
+@inject WeatherForecastService ForecastService
+
+@if (forecasts == null) {
+    <p><em>Loading...</em></p>
+}
+else {
+    <DxGrid @ref="myGrid" Data="@forecasts" CssClass="mw-1100" @bind-SelectedDataItems="@selectedDataItems" KeyFieldName="ID">
+        <Columns>
+            <DxGridSelectionColumn />
+            <DxGridDataColumn Caption="Date" FieldName="Date" />
+            <DxGridDataColumn Caption="Temperature (F)" FieldName="TemperatureF" />
+            <DxGridDataColumn Caption="Temperature (C)" FieldName="TemperatureC" />
+            <DxGridDataColumn Caption="Summary" FieldName="Summary" />
+        </Columns>
+    </DxGrid>
+    <DxButton Text="Delete selected rows" Click="@OnClick"/>
+}
+
+@code {
+    IGrid myGrid { get; set; }
+    List<WeatherForecast> forecasts;
+    IReadOnlyList<object> selectedDataItems { get; set; }
+
+    protected override async Task OnInitializedAsync() {
+        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+    }
+
+    void OnClick(MouseEventArgs args) {
+        if (selectedDataItems != null) {
+            foreach(WeatherForecast row in selectedDataItems) 
+                forecasts.Remove(row);
+            myGrid.Reload();
+        };
+    }
+}
