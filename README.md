@@ -14,7 +14,7 @@ Implement [two-way binding](https://docs.devexpress.com/Blazor/402330/common-con
 
 ## Files to Look At
 
-- [Index.razor](./CS/HighlightHoveredRow/Pages/Index.razor)
+- [Index.razor](./CS/DeleteSelectedRows/Pages/Index.razor)
 
 ## Documentation
 
