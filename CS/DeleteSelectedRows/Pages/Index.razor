@@ -32,6 +32,7 @@ else {
         if (selectedDataItems != null) {
             foreach(WeatherForecast row in selectedDataItems) 
                 forecasts.Remove(row);
+            selectedDataItems = null;  
             myGrid.Reload();
         };
     }
