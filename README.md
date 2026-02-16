@@ -27,7 +27,7 @@ Implement [two-way binding](https://docs.devexpress.com/Blazor/402330/common-con
 
 - [Grid for Blazor - How to display a custom confirmation dialog](https://github.com/DevExpress-Examples/blazor-DxDataGrid-show-the-confirmation-dialog-before-deleting-a-record)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=blazor-grid-delete-selected-rows&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=blazor-grid-delete-selected-rows&~~~was_helpful=no)
 
